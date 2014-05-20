@@ -5,7 +5,11 @@ module Library
 
   ffi_lib File.join(File.dirname(__FILE__), 'Debug/Hello.Net.FromRuby.dll')
 
-  class Person < FFI::Struct
+  class Person < FFI::ManagedStruct
+
+    def self.release(pointer)
+      Library.release_person(pointer)
+    end
 
     # this layout needs to match exactly with the C++ side
     layout :is_male, :bool,
@@ -35,6 +39,8 @@ module Library
     end
 
   end
+
+  attach_function :release_person, :Release_Person, [:pointer], :void
 
   attach_function :get_information, :Get_Information, [], Person.by_ref
   attach_function :hello, :Hello_DotNet_FromRuby, [:string], :void

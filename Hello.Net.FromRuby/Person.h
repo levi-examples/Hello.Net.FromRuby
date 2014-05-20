@@ -28,4 +28,8 @@ typedef struct _Person {
     }
   }
 
+  ~_Person() {
+    Console::WriteLine("Releasing person {0}", gcnew String(Name));
+  }
+
 } Person, *PersonPtr;
