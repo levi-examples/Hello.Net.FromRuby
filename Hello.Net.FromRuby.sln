@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hello.Net.FromRuby", "Hello.Net.FromRuby\Hello.Net.FromRuby.vcxproj", "{323D564A-2F63-4E5A-9583-BE181FD351CC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hello.Net.FromRuby.Test", "Hello.Net.FromRuby.Test\Hello.Net.FromRuby.Test.vcxproj", "{1215ADE6-529A-4F06-AF84-B1FBFF575114}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,6 +15,10 @@ Global
 		{323D564A-2F63-4E5A-9583-BE181FD351CC}.Debug|Win32.Build.0 = Debug|Win32
 		{323D564A-2F63-4E5A-9583-BE181FD351CC}.Release|Win32.ActiveCfg = Release|Win32
 		{323D564A-2F63-4E5A-9583-BE181FD351CC}.Release|Win32.Build.0 = Release|Win32
+		{1215ADE6-529A-4F06-AF84-B1FBFF575114}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1215ADE6-529A-4F06-AF84-B1FBFF575114}.Debug|Win32.Build.0 = Debug|Win32
+		{1215ADE6-529A-4F06-AF84-B1FBFF575114}.Release|Win32.ActiveCfg = Release|Win32
+		{1215ADE6-529A-4F06-AF84-B1FBFF575114}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
