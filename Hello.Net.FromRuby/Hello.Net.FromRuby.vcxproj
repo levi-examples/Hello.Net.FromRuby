@@ -77,8 +77,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Hello.Net.FromRuby.h" />
+    <ClInclude Include="Person.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Stdafx.h" />
+    <ClInclude Include="StringHelper.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
