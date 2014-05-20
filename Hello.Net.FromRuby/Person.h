@@ -29,7 +29,16 @@ typedef struct _Person {
   }
 
   ~_Person() {
-    Console::WriteLine("Releasing person {0}", gcnew String(Name));
+    // clean up the Name
+    delete[] Name;
+
+    // clean up each Language
+    for(auto index = 0; index < LanguagesLength; ++index) {
+      delete[] Languages[index];
+    }
+
+    // clean up Languages**
+    delete[] Languages;
   }
 
 } Person, *PersonPtr;
